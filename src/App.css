@@ -1,0 +1,139 @@
+.App {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.personCard {
+  margin: 20px;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+}
+
+.personName {
+  padding-left: 10px;
+  text-align: left;
+  color: #3f3f3f;
+  width: -webkit-fill-available;
+}
+
+.personImage {
+  width: 100px;
+  height: 100px;
+}
+
+.columnWrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.columnNameWrapper {
+  display: flex;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.columnArraySize {
+  display: block;
+  background-color: lightgrey;
+  color: black;
+  padding-top: 4px;
+  margin-left: 10px;
+  margin-top: 23px;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.columnName {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.column {
+  background-color: white;
+  min-height: 90vh;
+  border-radius: 20px;
+  width: 600px;
+  margin: 0 20px 0 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+*:focus {
+    outline: none;
+}
+
+.closeButton{
+  display: block;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  right: 10px;
+  top: -35px;
+  background-color: #ff6961;
+  cursor: pointer;
+  color: white;
+}
+
+.button {
+  font-family:fantasy;
+  font-size: 15px;
+  padding: 8px;
+  background-color: #3f3f3f;
+  color: white;
+  border-radius: 10px
+}
+
+.field {
+  font-family:fantasy;
+  font-size: 15px;
+  color: grey;
+  border:none;
+  margin-right: 10px;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  position: relative;
+  background-color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
