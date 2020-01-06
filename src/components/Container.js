@@ -6,7 +6,8 @@ import ListContainer from './ListContainer';
 const socketOptions = {
   logger: (kind, msg, data) => { console.log(`${kind}: ${msg}`, data); },
 };
-let socket = new Socket("ws://localhost:4000/socket", socketOptions)
+const url = process.env.REACT_APP_BACK_URL ? process.env.REACT_APP_BACK_URL : 'ws://localhost:4000/socket';
+let socket = new Socket(url, socketOptions)
 
 socket.connect();
 
