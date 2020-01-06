@@ -7,6 +7,8 @@ const socketOptions = {
   logger: (kind, msg, data) => { console.log(`${kind}: ${msg}`, data); },
 };
 const url = process.env.REACT_APP_BACK_URL ? process.env.REACT_APP_BACK_URL : 'ws://localhost:4000/socket';
+console.log("Socket url", url);
+
 let socket = new Socket(url, socketOptions)
 
 socket.connect();
@@ -41,7 +43,7 @@ export default class Container extends React.Component {
     this.updatePerson = this.updatePerson.bind(this)
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    channel.on("updatePersons", this.updateData);
+    channel.on('updatePersons', this.updateData);
   }
 
   updatePerson(id, source, destination) {
